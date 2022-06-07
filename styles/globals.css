@@ -6,12 +6,12 @@
   body {
     @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600;
   }
-  header {
-    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
-  }
 }
 
 @layer components {
+  .header {
+    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
+  }
   .headerLink {
     @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-300 hover:text-[#b3b3b3];
   }
@@ -23,5 +23,17 @@
   }
   .input {
     @apply w-full rounded bg-[#333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
+  }
+  .planBox {
+    @apply relative mx-1.5 flex items-center justify-center h-20 bg-[#e50914] w-[calc(100%/3)] cursor-default rounded-sm font-semibold shadow after:absolute after:top-full after:left-1/2 after:block after:-translate-x-1/2 after:border-8 after:border-b-0 after:border-transparent after:border-t-[#e50914] md:h-32 lg:mx-8;
+  }
+  .tableRow {
+    @apply flex flex-wrap items-center font-medium;
+  }
+  .tableDataTitle {
+    @apply w-full p-2.5 text-center text-sm font-normal text-white md:w-2/5 md:p-3.5 md:text-left md:text-base;
+  }
+  .tableDataFeature {
+    @apply w-[calc(100%/3)] p-2.5 text-center md:w-[calc(60%/3)] md:p-3.5;
   }
 }

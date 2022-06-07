@@ -86,16 +86,12 @@ export default function Login() {
           className="w-full rounded bg-[#e50914] py-3 font-semibold"
           onClick={() => setLogin(true)}
         >
-          {login ? 'Sign In' : 'Sign Up'}
+          Sign In
         </button>
 
         <div className="text-[gray]">
           New to Netflix?{' '}
-          <button
-            type="submit"
-            className="text-white hover:underline"
-            onClick={() => setLogin(false)}
-          >
+          <button type="submit" className="text-white hover:underline">
             Sign up now
           </button>
         </div>

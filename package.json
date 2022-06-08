@@ -11,6 +11,7 @@
     "@heroicons/react": "^1.0.6",
     "@mui/material": "^5.8.2",
     "@stripe/firestore-stripe-payments": "^0.0.6",
+    "date-fns": "^2.28.0",
     "firebase": "^9.8.2",
     "next": "latest",
     "next-transpile-modules": "^9.0.0",

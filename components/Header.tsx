@@ -29,8 +29,8 @@ export default function Header() {
         <img
           src="https://rb.gy/ulxxee"
           alt="netflix"
-          width={100}
-          height={100}
+          width={120}
+          height={120}
           className="cursor-pointer object-contain"
         />
 
@@ -47,15 +47,13 @@ export default function Header() {
         <SearchIcon className="hidden sm:inline sm:w-6 sm:h-6" />
         <p className="hidden lg:inline">Kids</p>
         <BellIcon className="h-6 w-6" />
-        {/* <Link href="/account"> */}
-        <div className="" onClick={() => logout()}>
+        <Link href="/account">
           <img
             src="https://rb.gy/g1pwyx"
             alt=""
             className="cursor-pointer rounded"
           />
-        </div>
-        {/* </Link> */}
+        </Link>
       </div>
     </header>
   );

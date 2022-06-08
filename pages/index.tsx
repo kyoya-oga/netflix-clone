@@ -40,7 +40,6 @@ const Home = ({
   const { loading, user } = useAuth();
   const showModal = useRecoilValue(modalState);
   const subscription = useSubscription(user);
-  console.log(subscription);
 
   if (loading || subscription === null) return null;
 

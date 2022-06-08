@@ -1,5 +1,7 @@
 ## About The Project
 
+![netflix-clone](https://user-images.githubusercontent.com/64949271/172625558-46b4bdb9-239e-4743-89ee-30f5b5a7044f.jpg)
+
 ### Built With
 
 - [TypeScript](https://www.typescriptlang.org/)

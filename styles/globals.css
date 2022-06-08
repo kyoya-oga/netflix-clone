@@ -39,4 +39,20 @@
   .membershipLink {
     @apply cursor-pointer text-blue-500 hover:underline;
   }
+
+  .mainMenu {
+    @apply md:hidden;
+  }
+
+  .mainMenu .MuiPaper-root {
+    @apply !absolute !left-0 !rounded-none !border !border-[gray] !bg-black !text-white;
+  }
+
+  .mainMenu .MuiList-root {
+    @apply !p-0;
+  }
+
+  .mainMenu .MuiMenuItem-root {
+    @apply !block !w-72 !py-3.5 !text-center !text-sm !font-light !text-[#b3b3b3] !transition !duration-200 first:cursor-default first:!font-normal first:!text-white hover:!bg-[#11100F];
+  }
 }

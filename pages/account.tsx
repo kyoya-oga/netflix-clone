@@ -22,13 +22,15 @@ export default function Account({ products }: Props) {
         <title>Account - Netflix clone</title>
       </Head>
       <header className="header bg-[#141414]">
-        <img
-          src="https://rb.gy/ulxxee"
-          alt="netflix"
-          width={120}
-          height={120}
-          className="cursor-pointer object-contain"
-        />
+        <Link href="/">
+          <img
+            src="https://rb.gy/ulxxee"
+            alt="netflix"
+            width={120}
+            height={120}
+            className="cursor-pointer object-contain"
+          />
+        </Link>
         <Link href="/account">
           <img
             src="https://rb.gy/g1pwyx"

@@ -1,11 +1,10 @@
 import { BellIcon, SearchIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import useAuth from '../hooks/useAuth';
+import BasicMenu from './BasicMenu';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { logout } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,11 +33,13 @@ export default function Header() {
           className="cursor-pointer object-contain"
         />
 
+        <BasicMenu />
+
         <ul className="hidden md:space-x-4 md:flex">
           <li className="headerLink">Home</li>
           <li className="headerLink">TV Shows</li>
           <li className="headerLink">Movies</li>
-          <li className="headerLink">New & Popular</li>
+          <li className="headerLink">New &amp; Popular</li>
           <li className="headerLink">My List</li>
         </ul>
       </div>

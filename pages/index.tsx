@@ -1,5 +1,4 @@
 import { getProducts, Product } from '@stripe/firestore-stripe-payments';
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useRecoilValue } from 'recoil';
 import { modalState } from '../atoms/modalAtom';

@@ -45,9 +45,9 @@ export default function Header() {
       </div>
 
       <div className="font-light flex items-center space-x-4 text-sm">
-        <SearchIcon className="hidden sm:inline sm:w-6 sm:h-6" />
-        <p className="hidden lg:inline">Kids</p>
-        <BellIcon className="h-6 w-6" />
+        <SearchIcon className="hidden sm:inline sm:w-6 sm:h-6 cursor-not-allowed" />
+        <p className="hidden lg:inline cursor-not-allowed">Kids</p>
+        <BellIcon className="h-6 w-6 cursor-not-allowed" />
         <Link href="/account">
           <img
             src="https://rb.gy/g1pwyx"

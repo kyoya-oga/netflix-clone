@@ -148,7 +148,7 @@ export default function Modal() {
           />
           <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
             <div className="flex space-x-3">
-              <button className="flex items-center gap-x-2 rounded bg-white px-8 text-xl font-bold text-black transition hover:bg-[#e6e6e6]">
+              <button className="flex items-center gap-x-2 rounded bg-white px-8 text-xl font-bold text-black transition hover:bg-[#e6e6e6] cursor-not-allowed">
                 <FaPlay className="h-7 w-7 text-black" />
                 Play
               </button>
@@ -159,7 +159,7 @@ export default function Modal() {
                   <PlusIcon className="h-7 w-7" />
                 )}
               </button>
-              <button className="modalButton">
+              <button className="modalButton cursor-not-allowed">
                 <ThumbUpIcon className="h-7 w-7" />
               </button>
             </div>

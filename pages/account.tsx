@@ -63,7 +63,7 @@ export default function Account({ products }: Props) {
               )[0]?.name
             }
           </div>
-          <button className="block cursor-pointer text-blue-500 hover:underline text-left md:text-right">
+          <button className="block cursor-pointer text-blue-500 hover:underline text-left md:text-right cursor-not-allowed">
             Change plan
           </button>
         </div>

@@ -11,6 +11,7 @@ interface Inputs {
 
 export default function Login() {
   const [login, setLogin] = useState(true);
+  const [loading, setLoading] = useState(false);
   const { signIn, signUp } = useAuth();
 
   const {
@@ -21,8 +22,10 @@ export default function Login() {
 
   const onSubmit: SubmitHandler<Inputs> = async ({ email, password }) => {
     if (login) {
+      setLoading(true);
       await signIn(email, password);
     } else {
+      setLoading(true);
       await signUp(email, password);
     }
   };
@@ -49,9 +52,31 @@ export default function Login() {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="relative mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0 md:w-full md:max-w-md md:px-14"
+        className="relative mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0 md:w-full md:max-w-lg md:px-14"
       >
         <h1 className="text-4xl font-semibold">Sign In</h1>
+
+        <div className="text-xl ">
+          <p>
+            This site is created for{' '}
+            <span className="text-red-500">learning purposes</span>. <br />
+            You can sign in or sign up with your own account and try
+            functionalities.
+            <br />
+            But I highly recommend you to use{' '}
+            <span className="text-red-500">a trial, unreal account</span>.<br />
+            Happy Coding🥳
+          </p>
+          <a
+            href="https://github.com/KYOYA-OGA/netflix-clone"
+            className="block mt-4 text-blue-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Here is Github repo
+          </a>
+        </div>
+
         <div className="space-y-4">
           <label className="block">
             <input
@@ -86,7 +111,7 @@ export default function Login() {
           className="w-full rounded bg-[#e50914] py-3 font-semibold"
           onClick={() => setLogin(true)}
         >
-          Sign In
+          {loading ? 'Loading...' : 'Sign In'}
         </button>
 
         <div className="text-[gray]">

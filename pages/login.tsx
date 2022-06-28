@@ -63,8 +63,8 @@ export default function Login() {
             You can sign in or sign up with your own account and try
             functionalities.
             <br />
-            But I highly recommend you to use{' '}
-            <span className="text-red-500">a trial, unreal account</span>.<br />
+            But I highly recommend you to use a dummy account.
+            <br />
             Happy Coding🥳
           </p>
           <a
